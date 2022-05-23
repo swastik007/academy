@@ -1,0 +1,106 @@
+.categories-one {
+    position: relative;
+    display: block;
+    padding: 120px 0px 50px 0;
+    .section-title {
+        margin-bottom: 42px;
+    }
+    .categories-one__wrapper {
+        position: relative;
+        display: block;
+    }
+    .categories-one__single {
+        position: relative;
+        display: block;
+        margin-bottom: 30px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        margin: 2em;
+        flex: 0 0 180px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width: 767px) {
+            max-width: 500px;
+        }
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            content: "";
+            background-color: rgba(15, 26, 85, 0.3);
+            -webkit-transition: all 500ms ease;
+            transition: all 500ms ease;
+            transform: scaleY(0);
+            opacity: 0;
+            z-index: 1;
+            border-radius: 7px;
+        }
+        &:hover {
+            &:before {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+            .categories-one__single-overlay {
+                transform: scaleY(1);
+            }
+        }
+    }
+    .categories-one__single-img {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+        img {
+            width: 100%;
+        }
+    }
+    .categories-one__single-overlay {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        transform: scaleY(0);
+        z-index: 1;
+    }
+    .categories-one__single-overlay-text1 {
+        position: relative;
+        display: block;
+        p {
+            position: relative;
+            display: inline-block;
+            color: #aeb2c2;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            background: #111;
+            padding: 10px 20px 6px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            margin: 0;
+        }
+    }
+    .categories-one__single-overlay-text2 {
+        position: relative;
+        display: block;
+        h4 {
+            position: relative;
+            display: inline-block;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 700;
+            padding: 15px 75px 10px 20px;
+            background: $kblue;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+}

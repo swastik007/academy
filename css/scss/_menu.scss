@@ -1,0 +1,253 @@
+        // body,
+        // html {
+        //     margin: 0;
+        //     padding: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     font-family: "Source Sans Pro", sans-serif;
+        //     color: #454545;
+        //     letter-spacing: 0.5px;
+        //     position: relative;
+        // }
+        // body {
+        //     padding: 8em 3em 3em;
+        //     main {
+        //         width: 100%;
+        //         height: auto;
+        //         img {
+        //             width: 100%;
+        //             display: block;
+        //         }
+        //         h1 {
+        //             font-size: 3em;
+        //             font-weight: 900;
+        //             text-transform: uppercase;
+        //             color: #1e1e1e;
+        //         }
+        //     }
+        // }
+        // .hamburger {
+        //     width: 2em;
+        //     height: 2em;
+        //     position: absolute;
+        //     top: 3em;
+        //     right: 3em;
+        //     z-index: 10000;
+        //     background: transparent;
+        //     cursor: pointer;
+        //     &.is-active {
+        //         .hamburger--container {
+        //             .hamburger--bars {
+        //                 background: white;
+        //                 &:before,
+        //                 &:after {
+        //                     background: white;
+        //                 }
+        //                 &:before {
+        //                     left: .25em;
+        //                 }
+        //                 &:after {
+        //                     left: -.25em;
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     .hamburger--container {
+        //         width: 100%;
+        //         padding: 0.25em;
+        //         position: relative;
+        //         .hamburger--bars {
+        //             height: 3px;
+        //             width: 1.5em;
+        //             background: #000;
+        //             position: absolute;
+        //             top: 0.9em;
+        //             transition: 0.3s ease;
+        //             &:before,
+        //             &:after {
+        //                 content: "";
+        //                 display: block;
+        //                 height: 3px;
+        //                 width: 1.5em;
+        //                 background: inherit;
+        //                 position: absolute;
+        //                 left: 0;
+        //                 transition: 0.3s ease;
+        //             }
+        //             &:before {
+        //                 top: -0.5em;
+        //             }
+        //             &:after {
+        //                 top: 0.5em;
+        //             }
+        //         }
+        //     }
+        // }
+        // .fsmenu {
+        //     width: 100vw;
+        //     height: 100vh;
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     z-index: 1000;
+        //     overflow: hidden;
+        //     display: none;
+        //     &.is-active {
+        //         display: block;
+        //         .fsmenu--container {
+        //             width: 100%;
+        //         }
+        //     }
+        //     .fsmenu--container {
+        //         width: 0;
+        //         height: 100vh;
+        //         padding: 8em 3em 3em;
+        //         background: #000;
+        //         position: absolute;
+        //         right: 0;
+        //         overflow: hidden;
+        //         .fsmenu--text-block {
+        //             width: 100%;
+        //             height: 100%;
+        //             .fsmenu--text-container {
+        //                 width: 100%;
+        //                 height: 100%;
+        //                 .fsmenu--list {
+        //                     width: 100%;
+        //                     height: 100%;
+        //                     display: flex;
+        //                     flex-direction: column;
+        //                     .fsmenu--list-element {
+        //                         width: 100%;
+        //                         height: 25%;
+        //                         list-style-type: none;
+        //                         text-align: right;
+        //                         a {
+        //                             width: 100%;
+        //                             height: 100%;
+        //                             text-decoration: none;
+        //                             color: red;
+        //                             display: flex;
+        //                             justify-content: flex-end;
+        //                             align-items: center;
+        //                             transition: 0.2s ease;
+        //                             span {
+        //                                 font-size: 5em;
+        //                                 font-weight: 700;
+        //                                 letter-spacing: 10px;
+        //                                 text-transform: uppercase;
+        //                                 line-height: 1;
+        //                                 height: 1em;
+        //                                 display: inline-block;
+        //                                 position: relative;
+        //                                 z-index: 1002;
+        //                                 &:before {
+        //                                     content: "";
+        //                                     display: block;
+        //                                     width: 100%;
+        //                                     height: 100%;
+        //                                     background: #fff;
+        //                                     position: absolute;
+        //                                     left: 0;
+        //                                     z-index: 1003;
+        //                                 }
+        //                             }
+        //                         }
+        //                         .fsmenu--scrolling-text {
+        //                             height: 100%;
+        //                             display: flex;
+        //                             align-items: center;
+        //                             transform: translate(-20%, -100%);
+        //                             opacity: 0;
+        //                             pointer-events: none;
+        //                             span {
+        //                                 height: 1em;
+        //                                 font-size: 8em;
+        //                                 font-weight: 900;
+        //                                 letter-spacing: 10px;
+        //                                 text-transform: uppercase;
+        //                                 line-height: 1;
+        //                                 color: #1e1e1e;
+        //                                 display: inline-block;
+        //                                 margin-right: 1em;
+        //                             }
+        //                         }
+        //                         .fsmenu--link-img {
+        //                             width: 0px;
+        //                             height: 100vh;
+        //                             padding: 8em 3em 3em;
+        //                             position: absolute;
+        //                             top: 0;
+        //                             right: calc(100vw - 720px);
+        //                             z-index: 1001;
+        //                             font-size: 16px;
+        //                             pointer-events: none;
+        //                             .fsmenu--img-container {
+        //                                 height: 100%;
+        //                                 width: 100%;
+        //                                 position: relative;
+        //                                 overflow: hidden;
+        //                                 img {
+        //                                     width: 624px;
+        //                                     display: block;
+        //                                     position: absolute;
+        //                                     right: 0;
+        //                                     top: 50%;
+        //                                     transform: translate(0, -50%);
+        //                                 }
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     &.close-menu {
+        //         display: block;
+        //         .fsmenu--container {
+        //             width: 100vw;
+        //             right: auto;
+        //             left: 0;
+        //             -webkit-animation: animMenuClose 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.3s forwards;
+        //             animation: animMenuClose 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.3s forwards;
+        //             .fsmenu--container {
+        //                 .fsmenu--text-container {
+        //                     .fsmenu--list {
+        //                         .fsmenu--list-element {
+        //                             a {
+        //                                 span {
+        //                                     &:before {
+        //                                         left: auto;
+        //                                         right: 0;
+        //                                         background: black;
+        //                                         -webkit-animation: animMenuCloseLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+        //                                         animation: animMenuCloseLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
+        //                                     }
+        //                                 }
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        // .logo {
+        //     width: 5em;
+        //     height: 5em;
+        //     position: absolute;
+        //     top: 1.5em;
+        //     left: 3em;
+        //     z-index: 10000;
+        //     filter: invert(1);
+        //     img {
+        //         width: 100%;
+        //         display: block;
+        //         transition: 0.3s linear 0.3s;
+        //     }
+        //     &.is-active {
+        //         img {
+        //             filter: invert(100%);
+        //         }
+        //     }
+        // }

@@ -1,0 +1,126 @@
+@keyframes animMenuReveal {
+    0% {
+        width: 0vw;
+    }
+    100% {
+        width: 100vw;
+    }
+}
+
+@keyframes animMenuRevealLinks {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes animMenuClose {
+    0% {
+        width: 100vw;
+        padding: 8em 3em 3em;
+    }
+    100% {
+        width: 0vw;
+        padding: 8em 0 0;
+    }
+}
+
+@keyframes animMenuCloseLinks {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 110%;
+    }
+}
+
+@keyframes animMenuRevealImg {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 720px;
+    }
+}
+
+@keyframes animMenuCloseImg {
+    0% {
+        width: 720px;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes animScrollingContactTextLeft {
+    0% {
+        transform: translate(-20%, -100%);
+    }
+    100% {
+        transform: translate(-40%, -100%);
+    }
+}
+
+
+/* animate box */
+
+@keyframes rotateme {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotateme {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotateme {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotateme {
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+
+.rotate-me {
+    animation-name: rotateme;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateme;
+    -webkit-animation-duration: 24s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotateme;
+    -moz-animation-duration: 24s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: rotateme;
+    -ms-animation-duration: 24s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: rotateme;
+    -o-animation-duration: 24s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}

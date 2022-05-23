@@ -1,0 +1,83 @@
+.features-one {
+    position: relative;
+    display: block;
+    background: transparent;
+    padding: 120px 0px 90px;
+    .features-one__single {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+        padding: 35px 40px 26px;
+        transition: all 200ms linear;
+        transition-delay: 0s;
+        transition-delay: 0.1s;
+        border: 1px solid #ffffff;
+        margin-bottom: 30px;
+        @media only screen and (max-width: 767px) {
+            max-width: 500px;
+            padding: 35px 15px 26px;
+            margin: 0 auto 30px;
+        }
+        &:before {
+            position: absolute;
+            left: -1px;
+            bottom: -1px;
+            right: -1px;
+            height: 5px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            background: rgb(6, 91, 137);
+            content: "";
+            transform: scaleY(0);
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transition: all 0.4s cubic-bezier(0.62, 0.21, 0.45, 1.22);
+            z-index: 1;
+        }
+        &:hover {
+            .features-one__single-icon {
+                transform: rotateY(180deg);
+                color: $kblue;
+            }
+            &:before {
+                transform: scaleY(1.0);
+            }
+        }
+    }
+    .features-one__single-icon {
+        position: relative;
+        display: block;
+        color: #444;
+        transition: all 500ms ease;
+        span {
+            font-size: 60px;
+        }
+    }
+    .features-one__single-text {
+        position: relative;
+        display: block;
+        padding-left: 20px;
+        h4 {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 700;
+            a {
+                color: #444;
+                transition: all 200ms linear;
+                transition-delay: 0s;
+                transition-delay: 0.1s;
+            }
+        }
+        p {
+            margin: 0;
+            line-height: 28px;
+            color: #777;
+            @media only screen and (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+    }
+}

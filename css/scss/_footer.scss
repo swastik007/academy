@@ -1,0 +1,167 @@
+.site-footer {
+    margin-top: -10px;
+    z-index: 1;
+    color: #fff;
+    font-weight: 500;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    // height: 100%;
+    // background-image: url('images/parallax.jpg');
+    font-family: $kum;
+    .footer-widget {
+        p {
+            color: #444;
+            font-size: 14px;
+        }
+        .title {
+            position: relative;
+            display: inline-block;
+            padding-left: 24px;
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: $orange;
+            &:after {
+                height: 20px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                background: $orange;
+                left: 0;
+                position: absolute;
+                content: "";
+                width: 4px;
+            }
+        }
+        ul {
+            li {
+                a {
+                    color: #444;
+                    display: block;
+                    font-weight: 500;
+                    i {
+                        margin-right: 15px;
+                        color: #5b84a3;
+                    }
+                }
+            }
+        }
+        .logo {
+            margin-top: 50px;
+        }
+        .short-info {
+            color: #444;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        a {
+            color: $kblue;
+        }
+    }
+    .footer-contact-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+        .content {
+            -ms-flex-preferred-size: 35%;
+            flex-basis: 35%;
+            a {
+                color: $yellow;
+                display: inline-block;
+                margin-top: 13px;
+                font-weight: 500;
+                i {
+                    margin-right: 10px;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    .box {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        background: #ffd57f;
+        padding: 14px 30px;
+        padding-right: 30px;
+        margin-top: 10px;
+        position: relative;
+        padding-right: 50px;
+        h2 {
+            font-size: 22px;
+            color: #002542;
+            font-weight: 700;
+            margin: 0;
+            span {
+                display: block;
+                font-size: 14px;
+                margin-bottom: 5px;
+                font-weight: 400;
+            }
+        }
+        .icon {
+            font-size: 40px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #f0c877;
+        }
+    }
+    .footer-social-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        .content {
+            -ms-flex-preferred-size: 45%;
+            flex-basis: 45%;
+            a {
+                color: #444;
+                display: block;
+                span {
+                    color: #517fa2;
+                }
+            }
+        }
+        .social-links {
+            -ms-flex-preferred-size: 55%;
+            flex-basis: 55%;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+            display: flex;
+            a {
+                display: block;
+                width: 40px;
+                height: 40px;
+                background: #0e4164;
+                line-height: 41px;
+                text-align: center;
+                border-radius: 50%;
+                color: #fff;
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .copyright {
+        border-top: 1px solid #777;
+        color: #444;
+        font-size: 14px;
+    }
+}
